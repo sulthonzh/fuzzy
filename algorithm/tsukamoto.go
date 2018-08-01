@@ -21,13 +21,15 @@ type (
 	}
 	// Variable is a struct for ...
 	Variable struct {
-		Name    string    // Variable Name
-		Mode    int       // 0:Fix 1:Min-Max
-		Domains []string  // { "Dekat" | "Sedang" | "Jauh" } | { "Baru" | "Sedang" | "Lama" }
-		Data    float64   // Input | Output(From spesific periodic)
-		Min     float64   // Min Data
-		Max     float64   // Max Data
-		MIU     []float64 // miu
+		Denomination string    // Variable Name
+		Name         string    // Variable Name
+		Mode         int       // 0:Fix 1:Min-Max
+		Domains      []string  // { "Dekat" | "Sedang" | "Jauh" } | { "Baru" | "Sedang" | "Lama" }
+		Data         float64   // Input | Output(From spesific periodic)
+		Min          float64   // Min Data
+		Max          float64   // Max Data
+		MIU          []float64 // miu
+		Graph        string
 	}
 )
 
